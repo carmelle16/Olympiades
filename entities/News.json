@@ -1,0 +1,39 @@
+{
+  "name": "News",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Titre de l'actualit\u00e9"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "R\u00e9sum\u00e9 court de l'actualit\u00e9"
+    },
+    "content": {
+      "type": "string",
+      "description": "Contenu complet de l'actualit\u00e9"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL de l'image de couverture"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "annonce",
+        "resultats",
+        "evenement",
+        "partenariat"
+      ],
+      "default": "annonce"
+    },
+    "published": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

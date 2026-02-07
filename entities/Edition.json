@@ -1,0 +1,48 @@
+{
+  "name": "Edition",
+  "type": "object",
+  "properties": {
+    "year": {
+      "type": "number",
+      "description": "Ann\u00e9e de l'\u00e9dition"
+    },
+    "location": {
+      "type": "string",
+      "description": "Lieu de la comp\u00e9tition internationale"
+    },
+    "participants_count": {
+      "type": "number",
+      "description": "Nombre de participants b\u00e9ninois"
+    },
+    "gold_medals": {
+      "type": "number",
+      "default": 0
+    },
+    "silver_medals": {
+      "type": "number",
+      "default": 0
+    },
+    "bronze_medals": {
+      "type": "number",
+      "default": 0
+    },
+    "honorable_mentions": {
+      "type": "number",
+      "default": 0
+    },
+    "highlights": {
+      "type": "string",
+      "description": "Faits marquants de cette \u00e9dition"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "is_current": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "year"
+  ]
+}
